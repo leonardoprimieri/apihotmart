@@ -1,0 +1,1 @@
+web: firebase emulators:start --only functions

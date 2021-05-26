@@ -5,8 +5,12 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', async (req, res) => {
-  return console.log(req.body);
+app.get('/asd', async (req, res) => {
+  return res.json({
+    name: 'Leonardo',
+    age: 19,
+    job: 'FrontEnd Developer',
+  });
 });
 
 exports.helloWorld = functions.https.onRequest(app);
